@@ -1,21 +1,20 @@
 import React from 'react';
 import './style.scss';
+import iconClose from './img/icon-close.svg'
+import iconNav from './img/icon-nav.svg'
 
 export const Navigation = () => (
   <>
     {/* Mobile-nav */}
     <div className="mobile-nav">
-      <input
-        className="mobile-nav__checkbox"
-        type="checkbox"
-        id="mobile-nav-toggle"
-      />
-      <label className="mobile-nav__button" htmlFor="mobile-nav-toggle">
-        <img className="mobile-nav__icon" src="img/icon-nav.svg" alt="navigace" />
-      </label>
+    
 
       <a className="mobile-nav__icon-close" href="index.html">
-        <img src="img/icon-close.svg" alt="ikona zavřít" />
+        <img src={iconClose} alt="ikona zavřít" />
+      </a>
+
+      <a className="mobile-nav__icon-close" href="index.html">
+        <img src={iconNav} alt="ikona zavřít" />
       </a>
 
       <nav className="mobile-nav__nav">

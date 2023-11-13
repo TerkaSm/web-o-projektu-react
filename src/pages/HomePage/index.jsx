@@ -1,4 +1,7 @@
 import './style.scss';
+import kockaImg from './img/kocka.svg'
+import pandaImg from './img/panda.svg'
+import tygrImg from './img/tygr.svg'
 
 export const HomePage = () => {
   return (
@@ -20,13 +23,13 @@ export const HomePage = () => {
 
         <div className="about__flex">
           <a href="tynka.html"
-            ><img className="about__img" src="img/kocka.svg" alt="kočka"
+            ><img className="about__img" src={kockaImg} alt="kočka"
           /></a>
           <a href="hedvika.html"
-            ><img className="about__img" src="img/panda.svg" alt="panda"
+            ><img className="about__img" src={pandaImg} alt="panda"
           /></a>
           <a href="terka.html"
-            ><img className="about__img" src="img/tygr.svg" alt="tygr"
+            ><img className="about__img" src={tygrImg} alt="tygr"
           /></a>
         </div>
       </section>
