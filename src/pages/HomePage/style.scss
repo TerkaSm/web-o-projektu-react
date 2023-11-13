@@ -1,0 +1,37 @@
+.about {
+  padding: 1.25rem;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1100px;
+
+  &__text {
+    margin: 2.5rem 0;
+    line-height: 2;
+
+    @media screen and (min-width: 900px) {
+      margin-bottom: 5rem;
+    }
+  }
+  
+  &__flex {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 3.75rem;
+    }
+  }
+  
+  &__img {
+    width: 65vw;
+    min-width: 200px;
+    max-width: 310px;
+  }
+  
+  &__img:hover {
+    transform: scale(1.3);
+  }
+}
+
