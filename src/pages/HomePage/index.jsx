@@ -23,13 +23,13 @@ export const HomePage = () => {
         <a className="button button--primary" href="#">Zahrát si hru</a>
 
         <div className="about__flex">
-          <Link href="/tynka"
+          <Link to="/tynka"
             ><img className="about__img" src={kockaImg} alt="kočka"
           /></Link>
-          <Link href="/hedvika"
+          <Link to="/hedvika"
             ><img className="about__img" src={pandaImg} alt="panda"
           /></Link>
-          <Link href="/terka"
+          <Link to="/terka"
             ><img className="about__img" src={tygrImg} alt="tygr"
           /></Link>
         </div>
