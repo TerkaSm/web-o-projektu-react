@@ -1,4 +1,5 @@
 import './style.scss';
+import { Link } from "react-router-dom";
 import kockaImg from './img/kocka.svg'
 import pandaImg from './img/panda.svg'
 import tygrImg from './img/tygr.svg'
@@ -22,15 +23,15 @@ export const HomePage = () => {
         <a className="button button--primary" href="#">Zahrát si hru</a>
 
         <div className="about__flex">
-          <a href="tynka.html"
+          <Link href="/tynka"
             ><img className="about__img" src={kockaImg} alt="kočka"
-          /></a>
-          <a href="hedvika.html"
+          /></Link>
+          <Link href="/hedvika"
             ><img className="about__img" src={pandaImg} alt="panda"
-          /></a>
-          <a href="terka.html"
+          /></Link>
+          <Link href="/terka"
             ><img className="about__img" src={tygrImg} alt="tygr"
-          /></a>
+          /></Link>
         </div>
       </section>
     </main>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from 'react';
 import './style.scss';
 import iconClose from './img/icon-close.svg'
@@ -20,16 +21,16 @@ export const Navigation = () => (
       <nav className="mobile-nav__nav">
         <ul className="mobile-nav__list">
           <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="index.html">Domů</a>
+            <Link className="mobile-nav__link" href="/">Domů</Link>
           </li>
           <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="hedvika.html">Hedvika</a>
+            <Link className="mobile-nav__link" href="/hedvika">Hedvika</Link>
           </li>
           <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="tynka.html">Týnka</a>
+            <Link className="mobile-nav__link" href="/tynka">Týnka</Link>
           </li>
           <li className="mobile-nav__item">
-            <a className="mobile-nav__link" href="terka.html">Terka</a>
+            <Link className="mobile-nav__link" href="/terka">Terka</Link>
           </li>
         </ul>
       </nav>
@@ -39,13 +40,13 @@ export const Navigation = () => (
     <nav className="navigation">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <a className="navigation__link" href="hedvika.html">Hedvika</a>
+          <Link className="navigation__link" href="/hedvika">Hedvika</Link>
         </li>
         <li className="navigation__item">
-          <a className="navigation__link" href="tynka.html">Týnka</a>
+          <Link className="navigation__link" href="/tynka">Týnka</Link>
         </li>
         <li className="navigation__item">
-          <a className="navigation__link" href="terka.html">Terka</a>
+          <Link className="navigation__link" href="/terka">Terka</Link>
         </li>
       </ul>
     </nav>

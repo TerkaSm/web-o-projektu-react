@@ -5,11 +5,13 @@ import { App } from './components/App';
 import './global.scss';
 import { HomePage } from './pages/HomePage';
 import { LocketPage } from './pages/LocketPage';
+import { ErrorPage } from './pages/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
