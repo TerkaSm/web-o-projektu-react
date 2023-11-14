@@ -19,16 +19,16 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/hedvika',
-        element: <LocketPage key={1} {...lockets[0]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal} />,
+        path: '/person/hedvika',
+        element: <LocketPage/:id />,
       },
       {
-        path: '/tynka',
-        element: <LocketPage key={2} {...lockets[1]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
+        path: '/person/tynka',
+        element: <LocketPage key={2}/>,
       },
       {
-        path: '/terka',
-        element: <LocketPage key={3} {...lockets[2]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
+        path: '/person/terka',
+        element: <LocketPage key={3}/>,
       }
     ]
   },

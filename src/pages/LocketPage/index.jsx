@@ -1,6 +1,9 @@
 import './style.scss';
+import { useParams } from 'react-router-dom';
 
 export const LocketPage = ({id, imgPerson, namePerson, gitHubLink, textPerson, nameAnimal, textAnimal, altAnimal, imgAnimal}) => {
+  const routeParams = useParams()
+  
   return (
     <main>
       <section className='locket' key={id}>

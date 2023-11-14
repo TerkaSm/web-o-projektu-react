@@ -1,6 +1,12 @@
-export const lockets = [
-    {
-        id: 1,
+const people = [
+    person = hedvika,
+    person = kristyna,
+    person = tereza
+]
+
+export const lockets = { 
+    [person: hedvika] {
+        id: hedvika,
         imgPerson: "assets/hedvika_reichlova.jpg",
         namePerson: "Hedvika Reichlová",
         gitHubLink: "https://github.com/DezesTheOne",
@@ -10,8 +16,8 @@ export const lockets = [
         altAnimal: "panda",
         imgAnimal: "assets/panda.svg",
     },
-    {
-        id: 2,
+    [person: kristyna] {
+        id: kristyna,
         imgPerson: "assets/kristyna_jozifova.jpg",
         namePerson: "Kristýna Jozífová",
         gitHubLink: "https://github.com/Kristyn-a",
@@ -21,8 +27,8 @@ export const lockets = [
         altAnimal: "kočka",
         imgAnimal: "assets/kocka.svg",
     },
-    {
-        id: 3,
+    [person: tereza] {
+        id: tereza,
         imgPerson: "assets/tereza_smolova.jpg",
         namePerson: "Tereza Smolová",
         gitHubLink: "https://github.com/TerkaSm",
@@ -32,4 +38,4 @@ export const lockets = [
         altAnimal: "tygr",
         imgAnimal: "assets/tygr.svg",
     },
-]
+}
