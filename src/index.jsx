@@ -19,17 +19,9 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/hedvika',
-        element: <LocketPage:id />,
+        path: '/:profileId',
+        element: <LocketPage />,
       },
-      {
-        path: '/kristyna',
-        element: <LocketPage:id/>,
-      },
-      {
-        path: '/tereza',
-        element: <LocketPage key={3}/>,
-      }
     ]
   },
 ]);
