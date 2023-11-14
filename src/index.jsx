@@ -6,7 +6,7 @@ import './global.scss';
 import { HomePage } from './pages/HomePage';
 import { LocketPage } from './pages/LocketPage';
 import { ErrorPage } from './pages/ErrorPage';
-import { lockets } from './lockets';
+import { LOCKETS } from './lockets';
 
 const router = createBrowserRouter([
   {
@@ -19,15 +19,15 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: '/person/hedvika',
-        element: <LocketPage/:id />,
+        path: '/hedvika',
+        element: <LocketPage:id />,
       },
       {
-        path: '/person/tynka',
-        element: <LocketPage key={2}/>,
+        path: '/kristyna',
+        element: <LocketPage:id/>,
       },
       {
-        path: '/person/terka',
+        path: '/tereza',
         element: <LocketPage key={3}/>,
       }
     ]

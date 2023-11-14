@@ -1,11 +1,5 @@
-const people = [
-    person = hedvika,
-    person = kristyna,
-    person = tereza
-]
-
-export const lockets = { 
-    [person: hedvika] {
+export const LOCKETS = { 
+     hedvika: {
         id: hedvika,
         imgPerson: "assets/hedvika_reichlova.jpg",
         namePerson: "Hedvika Reichlová",
@@ -16,7 +10,7 @@ export const lockets = {
         altAnimal: "panda",
         imgAnimal: "assets/panda.svg",
     },
-    [person: kristyna] {
+    kristyna: {
         id: kristyna,
         imgPerson: "assets/kristyna_jozifova.jpg",
         namePerson: "Kristýna Jozífová",
@@ -27,7 +21,7 @@ export const lockets = {
         altAnimal: "kočka",
         imgAnimal: "assets/kocka.svg",
     },
-    [person: tereza] {
+    tereza: {
         id: tereza,
         imgPerson: "assets/tereza_smolova.jpg",
         namePerson: "Tereza Smolová",

@@ -1,8 +1,10 @@
 import './style.scss';
 import { useParams } from 'react-router-dom';
+import { LOCKETS } from '../../lockets';
 
-export const LocketPage = ({id, imgPerson, namePerson, gitHubLink, textPerson, nameAnimal, textAnimal, altAnimal, imgAnimal}) => {
-  const routeParams = useParams()
+export const LocketPage = () => {
+  const {profileId} = useParams()
+	const {id, imgPerson, namePerson, gitHubLink, textPerson, nameAnimal, textAnimal, altAnimal, imgAnimal} = LOCKETS[profileId]
   
   return (
     <main>
