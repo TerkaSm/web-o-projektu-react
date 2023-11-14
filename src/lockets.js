@@ -1,6 +1,6 @@
 export const LOCKETS = { 
      hedvika: {
-        id: hedvika,
+        id: "hedvika",
         imgPerson: "assets/hedvika_reichlova.jpg",
         namePerson: "Hedvika Reichlová",
         gitHubLink: "https://github.com/DezesTheOne",
@@ -11,7 +11,7 @@ export const LOCKETS = {
         imgAnimal: "assets/panda.svg",
     },
     kristyna: {
-        id: kristyna,
+        id: "kristyna",
         imgPerson: "assets/kristyna_jozifova.jpg",
         namePerson: "Kristýna Jozífová",
         gitHubLink: "https://github.com/Kristyn-a",
@@ -22,7 +22,7 @@ export const LOCKETS = {
         imgAnimal: "assets/kocka.svg",
     },
     tereza: {
-        id: tereza,
+        id: "tereza",
         imgPerson: "assets/tereza_smolova.jpg",
         namePerson: "Tereza Smolová",
         gitHubLink: "https://github.com/TerkaSm",

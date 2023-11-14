@@ -26,6 +26,10 @@ const router = createBrowserRouter([
   },
 ]);
 
+createRoot(document.querySelector('#app')).render(
+  <RouterProvider router={router} />
+);
+
 
 // const router = createBrowserRouter([
 //   {
@@ -44,8 +48,3 @@ const router = createBrowserRouter([
 //     ]
 //   },
 // ]);
-
-
-createRoot(document.querySelector('#app')).render(
-  <RouterProvider router={router} />
-);
