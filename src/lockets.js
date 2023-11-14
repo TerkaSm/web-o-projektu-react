@@ -1,3 +1,5 @@
+//Import imgSrc from './assets/hedvika_reichlova.jpg'
+
 export const LOCKETS = { 
      hedvika: {
         id: "hedvika",
@@ -10,8 +12,8 @@ export const LOCKETS = {
         altAnimal: "panda",
         imgAnimal: "assets/panda.svg",
     },
-    kristyna: {
-        id: "kristyna",
+    tynka: {
+        id: "tynka",
         imgPerson: "assets/kristyna_jozifova.jpg",
         namePerson: "Kristýna Jozífová",
         gitHubLink: "https://github.com/Kristyn-a",
@@ -21,8 +23,8 @@ export const LOCKETS = {
         altAnimal: "kočka",
         imgAnimal: "assets/kocka.svg",
     },
-    tereza: {
-        id: "tereza",
+    terka: {
+        id: "terka",
         imgPerson: "assets/tereza_smolova.jpg",
         namePerson: "Tereza Smolová",
         gitHubLink: "https://github.com/TerkaSm",
