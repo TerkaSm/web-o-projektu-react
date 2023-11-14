@@ -20,19 +20,39 @@ const router = createBrowserRouter([
       },
       {
         path: '/hedvika',
-        element: <LocketPage key={id} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal} />,
+        element: <LocketPage key={1} {...lockets[0]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal} />,
       },
       {
         path: '/tynka',
-        element: <LocketPage key={id} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
+        element: <LocketPage key={2} {...lockets[1]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
       },
       {
         path: '/terka',
-        element: <LocketPage key={id} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
+        element: <LocketPage key={3} {...lockets[2]} imgPerson={imgPerson} namePerson={namePerson} gitHubLink={gitHubLink} textPerson={textPerson} nameAnimal={nameAnimal} textAnimal={textAnimal} altAnimal={altAnimal} imgAnimal={imgAnimal}/>,
       }
     ]
   },
 ]);
+
+
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       {
+//         path: '/',
+//         element: <HomePage />
+//       },
+//       ...lockets.map((locket) => ({
+//         path: `/${locket.id}`,
+//         element: <LocketPage key={locket.id} {...locket} />,
+//       }))
+//     ]
+//   },
+// ]);
+
 
 createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />
