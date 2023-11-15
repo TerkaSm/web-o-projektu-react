@@ -1,9 +1,10 @@
-//Import imgSrc from './assets/hedvika_reichlova.jpg'
+// import imgSrcHedvika from './assets/hedvika_reichlova.jpg'
+// import imgScrTynka from './assets/kristyna_jozifova.jpg'
 
 export const LOCKETS = { 
      hedvika: {
         id: "hedvika",
-        imgPerson: "assets/hedvika_reichlova.jpg",
+        imgPerson: "./assets/hedvika_reichlova.jpg",
         namePerson: "Hedvika Reichlová",
         gitHubLink: "https://github.com/DezesTheOne",
         textPerson: "Ahoj! Jsem Hedvika a na stará kolena jsem se rozhodla změnit významně kariéru. Přihlásila jsem se na Digitální akademii od Czechitas a chci se stát frontend developerem. Baví mě spoustu věcí, programování, animování, malování, fotografování, počítačové hry a do toho se snažím lézt a zbavovat se strachu z výšek. Jsem věčný hledač technických vychytávek a objevitel toho jak věci fungují. Doufám, že náš projekt bude dělat radost dětem i rodičům.",
@@ -14,7 +15,7 @@ export const LOCKETS = {
     },
     tynka: {
         id: "tynka",
-        imgPerson: "assets/kristyna_jozifova.jpg",
+        imgPerson: "./assets/kristyna_jozifova.jpg",
         namePerson: "Kristýna Jozífová",
         gitHubLink: "https://github.com/Kristyn-a",
         textPerson: "Ahoj, jmenuji se Kristýna a v mém dosavadním pracovním životě se žádné IT do dnešních dnů neobjevovalo. Toto odvětví mě zaujalo svojí rozmanitostí a vstřícností. Před pár lety jsem si vyzkoušela první kurz a byla to zábava se záplavou infomací, které nikdy nekončí. Ráda bych se posouvala a udělala progres v tomto odvětví.",

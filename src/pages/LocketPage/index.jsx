@@ -1,6 +1,7 @@
 import './style.scss';
 import { useParams } from 'react-router-dom';
 import { LOCKETS } from '../../lockets';
+import gitHubIconSrc from './img/icon-github.svg'
 
 export const LocketPage = () => {
   const {profileId} = useParams()
@@ -8,16 +9,16 @@ export const LocketPage = () => {
   
   return (
     <main>
-      <section className='locket' key={id}>
-        <div className="locket__flex-title-icon">
+      <section className="locket" key={id}>
+        <div className="locket__flex">
           <figcaption className="locket__fig">
             <img className="locket__img" src={imgPerson} alt={namePerson} />
           </figcaption>
           <div className="locket__content">
-            <div className='locket__flex--2'>
+            <div className="locket__flex-title-icon">
               <h1 className="locket__title">{namePerson}</h1>
               <a className="locket__github-link" href={gitHubLink}>
-                <img className="locket__github-icon" src="img/icon-github.svg" alt="ikona GitHub" />
+                <img className="locket__github-icon" src={gitHubIconSrc} alt="ikona GitHub" />
               </a>
             </div>
             <p className="locket__text">{textPerson}</p>

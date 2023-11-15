@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
 
+:root {
+  --background-color: #47929c; 
+  --primary-color: #675555;
+  --primary-color-hover: #8BC343;
+  --secondary-color: #fff;
+  --secondarycolor-hover: #8BC343;
+}
+
 *,
 ::before,
 ::after {
@@ -14,8 +22,8 @@
 
 body {
     font-family: 'Karla', sans-serif;
-    color: #fff;
-    background-color: #47929c;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
     margin: 0 auto;
     max-width: 1400px;
 }
@@ -56,17 +64,17 @@ h3 {
     border-radius: 30px;
     text-decoration: none;
     font-family: 'Life Savers', serif;
-    color: #fff;
+    color: var(--secondary-color);
 
     &--primary {
-      background-color: #675555;
+      background-color: var(--primary-color);
       transform: scale(1);
       transition: background-color .25s, transform .25s;
     }
   
     &--primary:hover {
-      background-color: #8BC343;
-      color: #675555;
+      background-color: var(--primary-color-hover);
+      color: var(--primary-color);
       transform: scale(1.05);
   
     }
@@ -75,13 +83,13 @@ h3 {
       font-size: clamp(1.2rem, 3vw, 2rem);
       padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
       transform: scale(1);
-      background-color: #fff;
+      background-color: var(--secondary-color);
       transition: background-color .25s, transform .25s;
-      color: #675555;
+      color: var(--primary-color);
     }
   
     &--secondary:hover {
-      background-color: #8BC343;
+      background-color: var(--secondarycolor-hover);
       transform: scale(1.05);
     }
   
