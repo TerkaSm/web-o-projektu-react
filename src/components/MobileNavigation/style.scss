@@ -1,0 +1,56 @@
+.mobile-nav {
+    position: relative;
+
+    &__icon {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        background-repeat: no-repeat;
+        align-self: first baseline;
+        width: 40px;
+        aspect-ratio: 1;
+    }
+    
+    &__icon--open {
+        background-image: url('img/icon-nav.svg');
+    }
+    
+    &__icon--close {
+        background-image: url('img/icon-close.svg');
+    }
+    
+    
+    &__nav {
+        height: 100vh;
+        width: 100%;
+        background-size: 100%;
+    }
+    
+    &__list {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+    }
+    
+    &__item {
+        padding: 1rem;
+    }
+    
+    &__link {
+        display: inline-block;
+        color: var(--secondary-color);
+        font-family: 'Life Savers', serif;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 1rem 0.5rem 0.5rem 0.5rem;
+        cursor: pointer;
+    }
+    
+    &__link:hover,
+    &__link:active {
+        transform: scale(1.3);
+    }
+}
+
+
