@@ -69,11 +69,6 @@
 /* Navigation - Desktop */
 
 .navigation {
-    display: none;
-
-    @media screen and (min-width: 850px) {
-        display: block;
-    }
 
     &__list {
         text-decoration: none;
