@@ -1,44 +1,70 @@
-import React from 'react';
-import { Link } from "react-router-dom";
-import './style.scss';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./style.scss";
 import { useState } from "react";
 
 export const MobileNavigation = () => {
-    const [isOpenMobileNav, setIsOpenMobileNav] = useState(false)
+  const [isOpenMobileNav, setIsOpenMobileNav] = useState(false);
 
-    const toggleMobileNav = () => {
-        setIsOpenMobileNav(!isOpenMobileNav)
-    }
+  const toggleMobileNav = () => {
+    setIsOpenMobileNav(!isOpenMobileNav);
+  };
 
-  return(
+  const location = useLocation();
+
+  return (
     <div className="mobile-nav">
+      <div
+        onClick={toggleMobileNav}
+        className="mobile-nav__icon mobile-nav__icon--open"
+      ></div>
 
-        <div
+      {isOpenMobileNav ? null : (
+        <nav className="mobile-nav__nav">
+          <div
             onClick={toggleMobileNav}
-            className={`mobile-nav__icon ${
-                isOpenMobileNav ? 'mobile-nav__icon--close' : 'mobile-nav__icon--open'
-            }`}>
-        </div>
-
-        {isOpenMobileNav 
-        ? null
-        :   <nav className="mobile-nav__nav">
-                <ul className="mobile-nav__list">
-                    <li className="mobile-nav__item">
-                    <Link className="mobile-nav__link" to="/">Domů</Link>
-                    </li>
-                    <li className="mobile-nav__item">
-                    <Link className="mobile-nav__link" to="/hedvika">Hedvika</Link>
-                    </li>
-                    <li className="mobile-nav__item">
-                    <Link className="mobile-nav__link" to="/tynka">Týnka</Link>
-                    </li>
-                    <li className="mobile-nav__item">
-                    <Link className="mobile-nav__link" to="/terka">Terka</Link>
-                    </li>
-                </ul>
-            </nav>
-        }
+            className="mobile-nav__icon mobile-nav__icon--close"
+          ></div>
+          <ul className="mobile-nav__list">
+            <li className="mobile-nav__item">
+              <Link
+                onClick={toggleMobileNav}
+                className="mobile-nav__link"
+                to="/"
+              >
+                Domů
+              </Link>
+            </li>
+            <li className="mobile-nav__item">
+              <Link
+                onClick={toggleMobileNav}
+                className="mobile-nav__link"
+                to="/hedvika"
+              >
+                Hedvika
+              </Link>
+            </li>
+            <li className="mobile-nav__item">
+              <Link
+                onClick={toggleMobileNav}
+                className="mobile-nav__link"
+                to="/tynka"
+              >
+                Týnka
+              </Link>
+            </li>
+            <li className="mobile-nav__item">
+              <Link
+                onClick={toggleMobileNav}
+                className="mobile-nav__link"
+                to="/terka"
+              >
+                Terka
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      )}
     </div>
-  )
+  );
 };
