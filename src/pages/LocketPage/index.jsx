@@ -1,12 +1,23 @@
-import './style.scss';
-import { useParams } from 'react-router-dom';
-import { LOCKETS } from '../../lockets';
-import gitHubIconSrc from './img/icon-github.svg'
+import "./style.scss";
+import { useParams } from "react-router-dom";
+import { LOCKETS } from "../../lockets";
+import gitHubIconSrc from "./img/icon-github.svg";
+import { Link } from "react-router-dom";
 
 export const LocketPage = () => {
-  const {profileId} = useParams()
-	const {id, imgPerson, namePerson, gitHubLink, textPerson, nameAnimal, textAnimal, altAnimal, imgAnimal} = LOCKETS[profileId]
-  
+  const { profileId } = useParams();
+  const {
+    id,
+    imgPerson,
+    namePerson,
+    gitHubLink,
+    textPerson,
+    nameAnimal,
+    textAnimal,
+    altAnimal,
+    imgAnimal,
+  } = LOCKETS[profileId];
+
   return (
     <main>
       <section className="locket" key={id}>
@@ -18,7 +29,11 @@ export const LocketPage = () => {
             <div className="locket__flex-title-icon">
               <h1 className="locket__title">{namePerson}</h1>
               <a className="locket__github-link" href={gitHubLink}>
-                <img className="locket__github-icon" src={gitHubIconSrc} alt="ikona GitHub" />
+                <img
+                  className="locket__github-icon"
+                  src={gitHubIconSrc}
+                  alt="ikona GitHub"
+                />
               </a>
             </div>
             <p className="locket__text">{textPerson}</p>
@@ -30,11 +45,17 @@ export const LocketPage = () => {
             <p className="locket__text">{textAnimal}</p>
           </div>
           <figcaption className="locket__fig">
-            <img className="locket__img-animal" src={imgAnimal} alt={altAnimal} />
+            <img
+              className="locket__img-animal"
+              src={imgAnimal}
+              alt={altAnimal}
+            />
           </figcaption>
         </div>
         <div className="button__wrapp">
-          <a className="button button--secondary" href="/">zpět</a>
+          <Link className="button button--secondary" to="/">
+            zpět
+          </Link>
         </div>
       </section>
     </main>
