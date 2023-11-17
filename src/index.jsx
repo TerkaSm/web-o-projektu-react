@@ -29,22 +29,3 @@ const router = createBrowserRouter([
 createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />
 );
-
-
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       {
-//         path: '/',
-//         element: <HomePage />
-//       },
-//       ...lockets.map((locket) => ({
-//         path: `/${locket.id}`,
-//         element: <LocketPage key={locket.id} {...locket} />,
-//       }))
-//     ]
-//   },
-// ]);

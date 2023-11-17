@@ -4,7 +4,7 @@ import "./style.scss";
 import { useState } from "react";
 
 export const MobileNavigation = () => {
-  const [isOpenMobileNav, setIsOpenMobileNav] = useState(false);
+  const [isOpenMobileNav, setIsOpenMobileNav] = useState(true);
 
   const toggleMobileNav = () => {
     setIsOpenMobileNav(!isOpenMobileNav);
